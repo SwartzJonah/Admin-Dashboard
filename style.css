@@ -9,6 +9,7 @@
     grid-template-rows: 1fr 4fr;
 }
 
+/* sidebar style */
 .sidebar{
     display: grid;
     grid-template-rows: 1fr 9fr;
@@ -40,7 +41,7 @@
     gap: 1vh;
 }
 
-
+/* Header Style */
 .header{
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -52,16 +53,131 @@
     border: 1px solid green;
 }
 
+.searchBar{
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+}
+.userNotif{
+   display: grid; 
+   grid-template-columns: 1fr 1fr 4fr;
+}
+
+.userInfo{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.userInfoImage{
+    grid-row: 1/3;
+}
+
+.userButtonsContainer{
+    margin:1vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+button{
+    background: aqua;
+    text-align: center;
+    height: 50px;
+    width: 100px;
+    border-radius: 12px;
+    padding: 10px;
+    
+}
+/* Main
+ Content style */
 .mainContent{
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-area: 1fr 1fr;
     background-color: yellow;
+    
+}
+
+.mainContent >div{
+    border: 1px solid green;
 }
 
 .projects{
+    margin: 2vh 1vh 1vh 1vh;
     grid-row: 1/3
 }
-.mainContent >div{
+
+.projects > *{
     border: 1px solid green;
+}
+
+.projectContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1vh;
+    margin: 1vh
+}
+
+.projectContainer >div{
+    border: 1px solid blueviolet;
+}
+/* The style for the project cards */
+.projectCard{
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 200px;
+    gap: 0;
+}
+.projectTitle{
+    grid-column: 1/4;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 0px;
+    border: 1px solid red;
+}
+
+.projectSummary{
+    grid-column: 1/4;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-bottom: 2px;
+}
+
+.projectLinks{
+    grid-column: 3/4;
+}
+
+.announcementContainer{
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1vh;
+    margin: 1vh;
+    padding: 1vh;
+}
+
+.announcementCard{
+    padding: 1vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.trendingContainer{
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1vh;
+    margin: 1vh;
+    padding: 1vh;
+}
+
+.trendingCard{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
+}
+
+.trendingIcon{
+    grid-row: 1/3;
 }
