@@ -6,7 +6,7 @@
 .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
-
+    grid-template-rows: 1fr 4fr;
 }
 
 .sidebar{
@@ -41,14 +41,27 @@
 }
 
 
-
-
 .header{
-    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
     background-color: red;
 }
 
+.header > div{
+    border: 1px solid green;
+}
+
 .mainContent{
-    
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-area: 1fr 1fr;
     background-color: yellow;
+}
+
+.projects{
+    grid-row: 1/3
+}
+.mainContent >div{
+    border: 1px solid green;
 }
