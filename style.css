@@ -11,7 +11,7 @@
 .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
 }
 
 /* sidebar style */
@@ -31,6 +31,7 @@
 .sidebar_logo{
     color: var(--white-color);
     padding: 1vh;
+    padding-top: 2vh;
     align-self: start;
     font-size: 30px;
 }
@@ -54,6 +55,7 @@
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     background-color: var(--white-color);
+    
 }
 
 .header > div{
@@ -63,20 +65,55 @@
 .searchBar{
     display: grid;
     grid-template-columns: 1fr 9fr;
+    text-align: center;
+    margin-top: 2vh;
 }
+
+.searchImage{
+    margin-left: 2vw;
+    
+}
+.actualBar{
+  background-color: var(--offwhite-color);
+  width: 90%;
+  height: 2.5vh;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+input {
+    padding: 4px 5px;
+}
+
 .userNotif{
    display: grid; 
    grid-template-columns: 1fr 1fr 4fr;
 }
 
 .userInfo{
+    font-weight: bold;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 2fr;
 }
 
-.userInfoImage{
+.profilePic{
+    margin-left: 2vw;
     grid-row: 1/3;
+    border-radius: 50%;
+    height: 8vh;
+}
+
+.userHello{
+    padding-left: 1vw;
+    padding-top: 1.5vh;
+    font-size: 16px;
+}
+.userInfoName{
+    padding-left: 1vw;
+    font-size: 24px;
 }
 
 .userButtonsContainer{
@@ -203,3 +240,4 @@ button{
     width: 24px;
     vertical-align: middle;
 }
+
