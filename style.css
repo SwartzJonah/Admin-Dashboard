@@ -2,7 +2,12 @@
     margin: 0;
     padding: 0;
 }
-
+:root {
+    --sidebar-color: #38bdf8;
+    --white-color: #fafaf9;  /* stone 50  */
+    --offwhite-color: #e7e5e4; /* stone 200  */
+    --noteside-color: #eab308; /* yellow 500 */
+}
 .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -14,26 +19,28 @@
     display: grid;
     grid-template-rows: 1fr 9fr;
     grid-row: 1/3;
-    font-size: 16px;
+    font-weight: bold;
     height: 100vh;
-    background-color: lightblue;
+    background-color: var(--sidebar-color);
 }
 
 .sidebar > div{
-    border: 1px solid green;
+    
 }
 
 .sidebar_logo{
-    
+    color: var(--white-color);
     padding: 1vh;
     align-self: start;
-    font-size: 24px;
+    font-size: 30px;
 }
 
 .sidebar_menu{
     align-self: start;
 }
 .sidebar_menu ul{
+    color: var(--white-color);
+    font-size: 20px;
     display: grid;
     grid-template-rows: repeat(3,1fr);
     margin-bottom: 10vh;
@@ -46,7 +53,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
-    background-color: red;
+    background-color: var(--white-color);
 }
 
 .header > div{
@@ -79,7 +86,7 @@
 }
 
 button{
-    background: aqua;
+    background: var(--sidebar-color);
     text-align: center;
     height: 50px;
     width: 100px;
@@ -93,7 +100,7 @@ button{
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-area: 1fr 1fr;
-    background-color: yellow;
+    background-color: var(--offwhite-color);
     
 }
 
@@ -149,7 +156,7 @@ button{
 }
 
 .announcementContainer{
-    background-color: white;
+    background-color: var(--white-color);
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1vh;
@@ -180,4 +187,19 @@ button{
 
 .trendingIcon{
     grid-row: 1/3;
+}
+
+/* SVG CSS */
+.dashboardImage{
+    fill: var(--white-color);
+    height:36px;
+    width: 36px;
+    vertical-align: middle;
+}
+
+.listImage{
+    fill: var(--white-color);
+    height:24px;
+    width: 24px;
+    vertical-align: middle;
 }
